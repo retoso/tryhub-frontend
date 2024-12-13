@@ -1,0 +1,259 @@
+/* Estilos gerais */
+
+.menu-master {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-image: linear-gradient(to right,#005C99,#4facfe,#2D3A4B);
+  color: white;
+  border-radius: 8px;
+}
+
+.menu-links a {
+  margin-right: 20px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.menu-links a:hover {
+  text-decoration: underline;
+}
+
+.menu-info {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.menu-info p {
+  margin: 0;
+  color: white;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.user-info button {
+  padding: 5px 10px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.user-info button:hover {
+  background-color: #d32f2f;
+}
+
+.dashboard {
+  padding: 30px;
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.dashboard h1 {
+  font-size: 28px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.dashboard-navigation {
+  margin-bottom: 30px;
+}
+
+.dashboard-navigation h2 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.modules {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.module-link {
+  padding: 20px 15px;
+  background-color: #4caf50;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.module-link:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+}
+
+.module-link:focus {
+  outline: none;
+}
+
+/* Cards de resumo */
+.dashboard-cards {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.card {
+  flex: 1 1 calc(25% - 20px);
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  color: #333;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 5px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Esquema de cores para cada card */
+.card-total-vendas {
+  width: 70%; 
+  min-width: 50px;
+  max-width: 180px;
+  background-image: linear-gradient(to right,#2b9900,#90ee73,#236405);
+  color: white;
+  opacity: 0.6;
+}
+
+.card-canceladas {
+  width: 70%; 
+  min-width: 50px;
+  max-width: 180px;
+  background-image: linear-gradient(to right,#db1212,#e07d82,#e01009);
+  color: white;
+  opacity: 0.6;
+}
+
+.card-fechadas {
+  width: 70%; 
+  min-width: 50px;
+  max-width: 180px;
+  background-image: linear-gradient(to right,#07406e,#2196f3,#032c4e);
+  color: white;
+  opacity: 0.6;
+}
+
+.card-abertas {
+  width: 70%; 
+  min-width: 50px;
+  max-width: 180px;
+  background-image: linear-gradient(to right,#e2c209,#f3e387,#7c5c03);
+  color: white;
+  opacity: 0.6;
+}
+
+.card-nao-encontradas {
+  width: 70%; 
+  min-width: 50px;
+  max-width: 180px;
+  background-image: linear-gradient(to right,#8a025c,#e49ad7,#920072);
+  color: white;
+  opacity: 0.6;
+}
+
+.card h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #140202;
+}
+
+.card p {
+  color: #140202;
+  font-size: 18px;
+}
+
+/* Gráficos */
+.dashboard-charts {
+  margin-top: 30px;
+}
+
+.dashboard-charts h2 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.dashboard-charts .recharts-wrapper {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+/* Atividades recentes */
+.dashboard-activities {
+  margin-top: 30px;
+}
+
+.dashboard-activities h2 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.dashboard-activities ul {
+  list-style: none;
+  padding: 0;
+}
+
+.dashboard-activities li {
+  padding: 12px 0;
+  border-bottom: 1px solid #ddd;
+  font-size: 16px;
+  color: #555;
+}
+
+/* Responsividade */
+
+@media (max-width: 768px) {
+  .dashboard-cards {
+    flex-direction: column;
+    gap: 15px;
+  }
+  @media (max-width: 768px) {
+    .card {
+      flex: 1 1 100%;
+    }
+  }
+
+  .module-link {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+
+  .dashboard-charts {
+    width: 100%;
+    margin-top: 20px;
+  }
+}

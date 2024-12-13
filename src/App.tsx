@@ -1,18 +1,20 @@
-import React from 'react';
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Login from "./pages/Login";
+import Dashboard from "./pages/Dashboard";
+import Aereo from "./pages/Aero";
 
-function App() {
+const App: React.FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          teste de front
-        </p>
-        <a>
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Login />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/Aereo" element={<Aereo />} />
+        {/* Outras rotas */}
+      </Routes>
+    </Router>
   );
-}
+};
 
 export default App;

@@ -1,0 +1,73 @@
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: url('/public/images/tryp.jpg'); 
+  background-size: cover; 
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #f3f1f1;
+}
+
+form {
+  position: relative;
+  z-index: 2; /* Garante que o formulário fique acima do overlay */
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+  font-size: 16px;
+  color: #555;
+}
+
+input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+button {
+  padding: 10px 15px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+p {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #f0e7e7;
+}
+
+p button {
+  background: none;
+  border: none;
+  color: #f0e7e7;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+p button:hover {
+  text-decoration: underline;
+}
